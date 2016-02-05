@@ -1,0 +1,13 @@
+$serverName = "server_ip"; 
+$uid = "user_mssql";   
+$pwd = "password";  
+$databaseName = "database_name"; 
+
+
+$connection = odbc_connect("Driver={SQL Server Native Client 10.0};Server=$serverName;Database=$databaseName;", $uid, $pwd);
+if( $connection ) {
+
+}else{
+     echo "Connection could not be established.<br />";
+     die( print_r( sqlsrv_errors(), true));
+}
