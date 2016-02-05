@@ -1,0 +1,10 @@
+<?php
+
+
+include 'DB_connection';
+//in this example i use odbc 
+$rs = odbc_exec($connection,"select * from table_name ");
+
+
+
+?>
